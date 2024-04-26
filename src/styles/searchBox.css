@@ -1,0 +1,23 @@
+.input-container {
+  width: 241px;
+  height: 38px;
+  position: relative;
+}
+
+.input-container input {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  padding: 6px 12px;
+  border: 1px solid rgb(206, 212, 218);
+  border-radius: 4px;
+}
+
+.input-container input:focus {
+  border-color: #7952b3;
+  box-shadow: 0 0 0 3px rgb(121 82 179 / 25%);
+}
+
+.disabled {
+  background-color: rgb(233, 236, 239);
+}
