@@ -2,15 +2,15 @@ import React, { useState } from 'react'
 import '../styles/searchBox.css';
 
 const SearchBox = ({ onSearch }) => {
-    const [searchValue, setSearchValue] = useState("");
+    const [query, setquery] = useState("");
 
     const handleInputChange = (e) => {
-        setSearchValue(e.target.value);
+        setquery(e.target.value);
     };
 
     const handleKeyPress = (e) => {
         if (e.key === 'Enter') {
-            onSearch(searchValue);
+            onSearch(query);
         }
     };
 
@@ -19,7 +19,7 @@ const SearchBox = ({ onSearch }) => {
             <input
                 type="search"
                 placeholder='Search places...'
-                value={searchValue}
+                value={query}
                 onChange={handleInputChange}
                 onKeyDown={handleKeyPress}
             />

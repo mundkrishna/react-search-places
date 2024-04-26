@@ -1,0 +1,26 @@
+.table-container {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 8px;
+  border: 1px solid rgb(222, 226, 230);
+}
+
+table th {
+  font-weight: 700;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

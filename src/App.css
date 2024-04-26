@@ -1,0 +1,16 @@
+.App {
+  position: relative;
+  min-height: 100vh;
+}
+
+.pagination-input-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pagination-input-container input {
+  padding: 5px;
+  margin-top: 20px;
+  width: 150px;
+}
